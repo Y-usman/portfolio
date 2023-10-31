@@ -9,6 +9,7 @@ body {
   line-height: 1.5;
 }
 
+
 h1,
 h2,
 h3,
@@ -20,4 +21,60 @@ h6 {
 
 p {
   margin: 0;
+}
+
+main{
+  width: 80%;
+  padding: 20px ;
+  margin: auto;
+  color: #cedeff;
+}
+
+h1 {
+  color: #fcfdfe;
+  font-size: 48px;
+}
+
+header {
+  background-color: #cedeff;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+} 
+
+ul li{
+  display: inline;
+  margin-right: 10px;
+}
+
+ul li a {
+  text-decoration: underline;
+  color: #cedeff;
+  font-size:x-large;
+}
+
+.page-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.page-section{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.page-section h2,p {
+  margin: 0;
+}
+
+.vertical-line {
+  border-left: 2px solid #333; /* Adjust the color and width of the line as needed */
+  height: 50px; /* Adjust the height of the line as needed */
+  margin: 0 20px; /* Adjust the margin to control the spacing between h2, line, and p */
 }
