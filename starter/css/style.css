@@ -35,6 +35,11 @@ h1 {
   font-size: 48px;
 }
 
+h2{
+  border-right: 5px solid #333; /* Adjust the color and width of the line as needed */
+  height:50px;
+}
+
 header {
   background-color: #cedeff;
   min-height: 10vh;
@@ -45,40 +50,75 @@ header {
   color: #fff;
 } 
 
-ul li{
-  display: inline;
-  margin-right: 10px;
+.hero-banner{
+  width: 100%;
+  text-align: right;
+  height: 200px;
+  width: 100%;
+  background-image: url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  color: #166bb0;
 }
 
-ul li a {
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li  {
+  display: inline;
+  margin-right:10px;
   text-decoration: underline;
   color: #cedeff;
   font-size:x-large;
 }
 
+nav li:last-child {
+  margin-right: 0;
+}
+
 .page-wrapper{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width:100%;
+
+}
+
+.page-wrapper::after{
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .page-section{
   display: flex;
-  align-items: center;
-  padding: 20px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #166bb0;
+  padding: 10px;
 }
 
-.page-section h2,p {
+
+.page-section h2 {
   margin: 0;
+  width: 20%;
+  float: left;
 }
 
-.vertical-line {
-  border-left: 2px solid #333; /* Adjust the color and width of the line as needed */
-  height: 50px; /* Adjust the height of the line as needed */
-  margin: 0 20px; /* Adjust the margin to control the spacing between h2, line, and p */
+.page-section h2+p {
+  margin: 0;
+  width: 75%;
+  float: right;
 }
 
-img{
-  width:500px;
+.page-section p{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.page-section p a img{
+  width: 300px;
 }
